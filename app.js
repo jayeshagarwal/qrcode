@@ -4,6 +4,10 @@ const qr = require('qrcode')
 const fs = require('fs')
 const crypto = require('crypto')
 
+app.get('/' ,(req,res)=> {
+    res.redirect('/qr')
+})
+
 app.get('/qr', async (req,res)=> {
     try {
         const id = crypto.randomBytes(20).toString('hex');
