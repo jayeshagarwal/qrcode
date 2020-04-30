@@ -33,6 +33,6 @@ app.get('/qrcode', async (req,res)=> {
     }
 })
 
-app.listen(process.env.port, ()=> {
+app.listen(process.env.PORT, ()=> {
     console.log('server')
 })
